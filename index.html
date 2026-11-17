@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="module" src="./modules/index.js"></script>
+</head>
+
+<body class="bg-light">
+    <div class="navbar navbar-dark bg-dark px-3">
+        <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h4 class="text-white mb-0">Roongta Developers</h4>
+        <select class="form-select w-auto">
+            <option value="">admin</option>
+            <option value="">admin</option>
+        </select>
+    </div>
+    <div class="container-fluid mt-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="text-primary">Manage Employees</h4>
+            <button class="btn btn-primary">+ Add Employees</button>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Search Employee</h5>
+                <hr>
+                <form id="searchForm">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <input type="text" id="name" class="form-control" placeholder="Enter Name">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="email" id="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="number" id="age" class="form-control" placeholder="Enter Age">
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select" id="companyDropDown">
+                                <option value="">search by company</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select" id="location">
+                                <option value="">search Location</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select" id="department">
+                                <option value="">search by department</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select" id="degignation">
+                                <option value="">search by degignation</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select" id="status">
+                                <option value="">search by status</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary w-100" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-primary">Employees</h5>
+                <hr>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Name</th>
+                                <th>User Type</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="employeeDetails">
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
